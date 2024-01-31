@@ -12,6 +12,12 @@ let objNew = {
         console.log("my name is "+this.fname+this.lname);
     }
 }
+// The Object.keys() static method returns an array of a given object's own enumerable string-keyed property names.
+
+console.log(Object.values(objNew));
+// console.log(Object.keys(objNew));
+
+
 const mySum2 = {
     kname : "bipi",
     lkname :"sarkar",
@@ -19,8 +25,8 @@ const mySum2 = {
     address1 :"gangarampur",
     gmail1:"bittusarkar733101@gmail.com"
 }
-    const objPrin = {...objNew,...mySum2};
-    console.log(objPrin);
+    // const objPrin = {...objNew,...mySum2};
+    // console.log(objPrin);
 // objNew.gmail="adityachatgpt@gmail.com";
 // console.log(objNew);
 // Object.freeze(objNew);//object value are freeze not change;
