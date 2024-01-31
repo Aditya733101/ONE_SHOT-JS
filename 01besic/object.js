@@ -12,6 +12,15 @@ let objNew = {
         console.log("my name is "+this.fname+this.lname);
     }
 }
+const mySum2 = {
+    kname : "bipi",
+    lkname :"sarkar",
+    age2 : 24,
+    address1 :"gangarampur",
+    gmail1:"bittusarkar733101@gmail.com"
+}
+    const objPrin = {...objNew,...mySum2};
+    console.log(objPrin);
 // objNew.gmail="adityachatgpt@gmail.com";
 // console.log(objNew);
 // Object.freeze(objNew);//object value are freeze not change;
