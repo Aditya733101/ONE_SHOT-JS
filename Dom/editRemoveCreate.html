@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>new-element-remove</title>
+</head>
+<body>
+  <ul class="parents">
+    <li>javascript</li>
+  </ul>
+  <script>
+    //edit
+    function name(item) {
+      const num1 = document.querySelector('.parents')
+      const num = document.createElement('li')
+      addText = document.createTextNode(item);
+      num.appendChild(addText);
+      num1.appendChild(num);
+    }
+  name('phyton')
+  name('cpp');
+    name('oo');
+
+  // edit-2
+  const myNum = document.querySelector('li:first-child')
+  myNum.outerHTML = '<li>typescrit</li>' 
+
+  //replace 
+     const num1 = document.querySelector('li:nth-child(2)');
+    const num = document.createElement('li')
+    num.textContent = "lanuge";
+    num1.replaceWith(num)
+  
+
+    // delete
+    // const del = document.querySelector('li:last-child')
+    // del.remove()
+
+
+  </script>
+</body>
+</html>
