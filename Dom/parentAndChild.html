@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>parant and child</title>
 </head>
 <body>
   <div class="parants">
@@ -12,5 +12,16 @@
     <div class="day">wednesday</div>
     <div class="day">thursday</div>
   </div>
+  <script>
+     const newElemet = document.querySelector('.parants')
+    //  for (let index = 0; index < newElemet.children.length; index++) {
+    //   console.log(newElemet.children[index].innerHTML);
+      
+    //  }
+      console.log(newElemet.lastElementChild);//last element child
+      console.log(newElemet.firstElementChild);//first element child
+      console.log(newElemet.childNodes);//return child nodes
+      console.log(newElemet.children[1]);//acces to index number
+  </script>
 </body>
 </html>
