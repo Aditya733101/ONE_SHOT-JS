@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>create-new-element</title>
+</head>
+<body>
+  <script>
+ const div =    document.createElement('div');
+ div.className = "hi"
+ div.style.background = 'yellow'
+ div.style.color = ''
+//  div.innerText ="Aditya and Coding"
+//  div.setAttribute('class','test')
+ const addText = document.createTextNode('ami ar tumi')
+ div.appendChild(addText);
+
+  document.body.appendChild(div);
+
+
+  </script>
+  
+</body>
+</html>
