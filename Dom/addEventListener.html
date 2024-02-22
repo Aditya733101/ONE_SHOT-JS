@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ADD EventListner</title>
+</head>
+
+<body>
+  <!-- change method is  -->
+  <select name="" id="select">
+    <option value="Audi">Audi</option>
+    <option value="Marcedes">Marcedes</option>
+    <option value="Honda">Honda</option>
+    <option value="suzuki">suzuki</option>
+  </select>
+  <p class="result"></p>
+
+  <!-- blur() method remove the focus from element -->
+  <input type="text" value="" id="text">
+<button class="getfocus">getfocus</button>
+<button class="getblur">getblur</button>
+
+  <!-- javascript -->
+  <script>
+    // focus() mehod its can be focused
+   const btn = document.querySelector('.getfocus');
+   btn.addEventListener('click',function() {
+    document.querySelector('#text').focus()
+   })
+   const btn2 = document.querySelector('.getblur');
+    btn2.addEventListener('click', function () {
+      document.querySelector('#text').blur()
+    })
+
+
+
+
+
+// change mehod()
+    const store = document.querySelector('#text');
+    store.addEventListener('change',function () {
+      store.value = store.value.toUpperCase();
+      
+    })
+
+
+    const num = document.querySelector('#select');
+    num.addEventListener("change", function () {
+      const numj = document.querySelector('#select').value;
+      const result = document.querySelector('.result');
+      result.innerHTML = `you selected :- ${numj}`;
+    })
+
+  </script>
+</body>
+
+</html>
