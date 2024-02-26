@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>async_project</title>
+</head>
+
+<body>
+  <h2 style="text-align: center;">color change project</h2>
+  <button id="start">start</button>
+  <button id="stop">stop</button>
+  <script>
+    const rendomColor = function () {
+      const hex = "0123456789ABCDEF";
+      let color = '#'
+      for (let i = 0; i < 6; i++) {
+        color += hex[Math.floor(Math.random() * 16)];
+      }
+      return color;
+
+    }
+    let interval;
+    const startChangingColor = function () {
+      interval = setInterval(start, 2000);
+      function start() {
+        document.querySelector("h2").innerHTML = "COLOR CHANGE START";
+        const body = document.querySelector("body");
+        body.style.backgroundColor = rendomColor();
+      }
+
+    }
+    const stopChangingColor = function () {
+      document.querySelector("h2").innerHTML = "COLOR CHANGE STOP";
+      clearInterval(interval)
+      interval = null;
+    }
+
+    document.querySelector("#start").addEventListener("click", startChangingColor);
+
+    document.querySelector("#stop").addEventListener("click", stopChangingColor);
+
+
+  </script>
+</body>
+
+</html>

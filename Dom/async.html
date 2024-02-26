@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>async-js</title>
+</head>
+
+<body>
+  <h2>chai or code</h2>
+  <button id="stop">stop</button>
+  <script>
+
+    const run = function () {
+      document.querySelector('h2').innerHTML = "my brother name is shubhodeep"
+      console.log("run");
+    }
+
+
+
+    const changeMe = setTimeout(run, 2000);
+    document.querySelector("#stop").addEventListener("click", () => {
+      clearTimeout(changeMe);
+    })
+    // setTimeout(() => {
+    //   console.log("hitesh");
+    // }, 2000);
+  </script>
+
+
+</body>
+
+</html>

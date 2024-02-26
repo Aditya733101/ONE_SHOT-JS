@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>key-show</title>
+</head>
+
+<body>
+  <h2 style="text-align: center;">key cheaker</h2>
+  <div class="insert">
+
+  </div>
+  <script>
+    const inser = document.querySelector(".insert");
+    window.addEventListener('keydown', (e) => {
+      inser.innerHTML = `
+      <table>
+  <tr>
+    <th>key</th>
+    <th>Keycode</th>
+    <th>code</th>
+  </tr>
+  <tr>
+    <td>${e.key === " " ? 'space' : e.key}</td>
+    <td>${e.keyCode}</td>
+    <td>${e.code}</td>
+  </tr>
+  
+</table >`
+
+    })
+
+
+
+
+
+
+  </script>
+</body>
+
+</html>
