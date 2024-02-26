@@ -6,7 +6,7 @@ project link:
 
 ## solution code
 ```javascript
-console.log(""Aditya sarkar)
+console.log("Aditya sarkar")
 const nums = document.querySelectorAll('.button');
 const main = document.querySelector("body");
 nums.forEach(function (button){
